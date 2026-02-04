@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+input.invalid {
+    border-color: red;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Password strength meter */
+.strength-meter {
+    height: 5px;
+    background: #ddd;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.strength-meter span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: red;
+    border-radius: 4px;
+    transition: width 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .container {
+        margin: 10px;
+    }
+}
